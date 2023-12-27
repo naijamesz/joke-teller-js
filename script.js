@@ -43,6 +43,13 @@ async function getJokes() {
   }
 }
 
+// Event Listeners from Enter Key
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
+    getJokes();
+  }
+});
+
 // Event Listeners
 button.addEventListener('click', getJokes);
 audioElement.addEventListener('ended', toggleButton);

@@ -62,6 +62,7 @@ const VoiceRSS = {
       '&b64=true'
     );
   },
+
   _detectCodec: function () {
     var e = new Audio();
     return e.canPlayType('audio/mpeg').replace('no', '')
